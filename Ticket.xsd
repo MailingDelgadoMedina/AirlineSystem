@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.mailingairline.com/Ticket" 
+ xmlns:tns="http://www.mailingairline.com/Ticket"
+  elementFormDefault="qualified">
+  
+  <element name="ticket" type="tns:Ticket" />
+
+  <complexType name="Ticket">
+ 	<sequence>
+  	<element name="airline" type="tns:Airline" minOccurs="1" maxOccurs="1">  </element>
+    <element name="departureCity" type="string"  minOccurs="1" maxOccurs="1">  </element>
+    <element name="arrivalCity" type="string" minOccurs="1" maxOccurs="1">  </element>
+    <element name="departureDate" type="string" minOccurs="1" maxOccurs="1">  </element>
+    <element name="returnDate" type="string" minOccurs="0" maxOccurs="1">  </element>
+    <element name="numberOfPassengers" type="int" minOccurs="1" maxOccurs="6">  </element>
+    <element name="Passangers" type="tns:PassangerType" minOccurs="1" maxOccurs="6"></element>
+    <element name="connectingCity" type="string">  </element>
+    <element name="flightType" type="tns:FlightType" minOccurs="1" maxOccurs="1"></element>
+   </sequence>
+ </complexType>
+ 
+
+ 
+ <complexType name="PassangerType">
+  <all>
+  <element name="adult" type="tns:Adult"  minOccurs="1" maxOccurs="1">  </element>
+  <element name="children" type="tns:Children"  minOccurs="0" maxOccurs="1">  </element>
+  </all>
+ </complexType>
+ 
+ <simpleType name="Airline">
+ <restriction base="string">
+ <enumeration value="JetBlue"></enumeration>
+ <enumeration value="Spirit"></enumeration>
+ </restriction>
+ </simpleType>
+
+ <simpleType name="Adult">
+ <restriction base="int">
+ <pattern value="[0-6]"></pattern>
+ </restriction>
+ </simpleType>
+ 
+<simpleType name="Children">
+<restriction base="int">
+<pattern value="[0-6]"></pattern>
+</restriction>
+</simpleType>
+
+<simpleType name="FlightType">
+<restriction base="string">
+<enumeration value="Non-stop"></enumeration>
+<enumeration value="1-stop"></enumeration>
+<enumeration value="Any"></enumeration>
+</restriction>
+</simpleType>
+ 
+ 
+  
+  
+</schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ticket xmlns:tns="http://www.mailingairline.com/Ticket" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mailingairline.com/Ticket Ticket.xsd ">
+  <tns:airline>JetBlue</tns:airline>
+  <tns:departureCity>tns:departureCity</tns:departureCity>
+  <tns:arrivalCity>tns:arrivalCity</tns:arrivalCity>
+  <tns:departureDate>tns:departureDate</tns:departureDate>
+  <tns:numberOfPassengers>0</tns:numberOfPassengers>
+  <tns:Passangers>
+    <tns:adult>0</tns:adult>
+  </tns:Passangers>
+  <tns:connectingCity>tns:connectingCity</tns:connectingCity>
+  <tns:flightType>Non-stop</tns:flightType>
+</tns:ticket>
