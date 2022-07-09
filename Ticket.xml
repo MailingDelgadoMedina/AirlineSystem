@@ -10,4 +10,5 @@
   </tns:Passangers>
   <tns:connectingCity>tns:connectingCity</tns:connectingCity>
   <tns:flightType>Non-stop</tns:flightType>
+  <tns:time>tns:time</tns:time>
 </tns:ticket>

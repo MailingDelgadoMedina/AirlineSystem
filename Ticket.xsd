@@ -17,6 +17,7 @@
     <element name="Passangers" type="tns:PassangerType" minOccurs="1" maxOccurs="6"></element>
     <element name="connectingCity" type="string">  </element>
     <element name="flightType" type="tns:FlightType" minOccurs="1" maxOccurs="1"></element>
+    <element name="time" type="string"></element>
    </sequence>
  </complexType>
  
