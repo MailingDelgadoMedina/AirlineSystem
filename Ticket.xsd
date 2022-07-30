@@ -19,6 +19,7 @@
     <element name="flightType" type="tns:FlightType" minOccurs="1" maxOccurs="1"></element>
     <element name="time" type="string"></element>
    </sequence>
+   	<attribute name="id" type="tns:ID" />
  </complexType>
  
 
@@ -57,7 +58,11 @@
 </restriction>
 </simpleType>
  
- 
+ <simpleType name="ID">
+		<restriction base="int">
+			<pattern value="[0-9]*" />
+		</restriction>
+	</simpleType>
   
   
 </schema>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tns:ticket xmlns:tns="http://www.mailingairline.com/Ticket" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mailingairline.com/Ticket Ticket.xsd ">
   <tns:airline>JetBlue</tns:airline>
-  <tns:departureCity>tns:departureCity</tns:departureCity>
-  <tns:arrivalCity>tns:arrivalCity</tns:arrivalCity>
-  <tns:departureDate>tns:departureDate</tns:departureDate>
-  <tns:numberOfPassengers>0</tns:numberOfPassengers>
+  <tns:departureCity>FortLauderdale</tns:departureCity>
+  <tns:arrivalCity>SanJuan</tns:arrivalCity>
+  <tns:departureDate>05/24/2024</tns:departureDate>
+  <tns:numberOfPassengers>5</tns:numberOfPassengers>
   <tns:Passangers>
-    <tns:adult>0</tns:adult>
+    <tns:adult>2</tns:adult>
+    <tns:children>3</tns:children>
   </tns:Passangers>
-  <tns:connectingCity>tns:connectingCity</tns:connectingCity>
+  <tns:connectingCity>Florida</tns:connectingCity>
   <tns:flightType>Non-stop</tns:flightType>
-  <tns:time>tns:time</tns:time>
+  <tns:time>6:00pm</tns:time>
 </tns:ticket>
